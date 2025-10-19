@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EventSphere</title>
+    <!-- This single line gives us access to all of Tailwind's styling classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* This simple rule is the secret to our "single-page" app. */
+        /* It hides all pages by default... */
+        .page { display: none; }
+        /* ...and only shows the one we mark as 'active'. */
+        .page.active { display: block; }
+    </style>
+</head>
+<body class="bg-slate-100">
+
+    <!-- Main Application Container -->
+    <div id="app" class="max-w-6xl mx-auto p-4">
+
+        <!-- These are the empty containers for each feature. -->
+        <!-- Each person on the team now has a clear place to put their code. -->
+        
+        <!-- Person 2's Work Goes Here -->
+        <div id="home-page" class="page"></div>
+        <div id="about-page" class="page"></div>
+        <div id="contact-page" class="page"></div>
+
+        <!-- Your Login/Register Pages Go Here -->
+        <div id="login-page" class="page"></div>
+        <div id="register-page" class="page"></div>
+
+        <!-- Person 3's Work Goes Here -->
+        <div id="dashboard-page" class="page"></div>
+        
+    </div>
+
+    <!-- Person 4 & 5's Modals will go outside the main app container -->
+
+    <!-- This script tag MUST be at the end of the body. -->
+    <!-- This ensures the HTML is loaded before our JavaScript tries to find any elements. -->
+    <script src="script.js"></script>
+</body>
+</html>
